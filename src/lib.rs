@@ -52,6 +52,6 @@ mod tests {
     fn link() {
         let (mut majnum, mut minnum, mut relnum) = (0, 0, 0);
         assert!(unsafe { ::H5get_libversion(&mut majnum, &mut minnum, &mut relnum) } >= 0);
-        assert_eq!((majnum, minnum), (1, 8));
+        assert_eq!((majnum, minnum), (1, 10));
     }
 }
