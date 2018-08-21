@@ -38,8 +38,8 @@ fn main() {
         ok!(fs::create_dir_all(&build));
         run!(cmd!(source.join("configure")).current_dir(&build)
                                            .arg("--disable-hl")
-                                           .arg("--enable-debug=no")
-                                           .arg("--enable-production")
+                                           .arg("--enable-debug-mode=no")
+                                           .arg("--enable-build-mode=production")
                                            .arg("--enable-threadsafe")
                                            .arg(&format!("--prefix={}", install.display())));
     }
